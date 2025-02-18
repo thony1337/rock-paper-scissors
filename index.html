@@ -8,6 +8,15 @@ let computerChoice = Math.random();
     } else {
        return "scissors";
     }
- }
- console.log(getComputerChoice())
+ } 
+ let humanChoice = prompt("rock, paper or scissors?");
+  function getHumanChoice() {
+    if (humanChoice === "rock") {
+        return "rock";
+    } else if (humanChoice === "paper") {
+        return "paper";
+    } else if (humanChoice === "scissors") {
+        return "scissors";
+    }
+  }
 </script>
