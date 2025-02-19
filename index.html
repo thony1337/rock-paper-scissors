@@ -1,5 +1,5 @@
 <script>
-let ComputerSelection = Math.random();
+let computerSelection = Math.random();
  function getComputerChoice() {
     if (computerSelection < 0.33) {
        return "rock";
@@ -28,11 +28,23 @@ let computerChoice = getComputerChoice();
  function playRound(humanChoice, computerChoice) {   
    if (humanChoice === "rock" && computerChoice === "paper") {
       return "You lose! Paper beats rock";
-   } else  if (humanChoice === "paper" && computerChoice === "paper") {
-      return "You lose! Paper beats rock";
+   } else  if (humanChoice === "paper" && computerChoice === "scissors") {
+      return "You lose! Scissors beats paper";
+   } else  if (humanChoice === "scissors" && computerChoice === "rock") {
+      return "You lose! Rock beats scissors";
+   } else  if (humanChoice === "rock" && computerChoice === "scissors") {
+      return "You Won! Rock beats scissors";
    } else  if (humanChoice === "scissors" && computerChoice === "paper") {
-      return "You lose! Paper beats rock";
-   }  
+      return "You Won! Scissors beats paper";
+   } else  if (humanChoice === "paper" && computerChoice === "rock") {
+      return "You Won! Paper beats rock";
+   } else  if (humanChoice === "scissors" && computerChoice === "scissors") {
+      return "Oh, that's a tie";
+   } else  if (humanChoice === "rock" && computerChoice === "rock") {
+      return "Oh, that's a tie";
+   } else  if (humanChoice === "paper" && computerChoice === "paper") {
+      return "Oh, that's a tie";
+   }        
 }
 console.log(playRound(humanChoice, computerChoice))
 </script>
