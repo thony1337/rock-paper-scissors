@@ -9,7 +9,7 @@ let computerSelection = Math.random();
        return "scissors";
     }
  } 
- let humanSelection = prompt("rock, paper or scissors?");
+ let humanSelection = prompt("rock, paper or scissors?").toLowerCase();
   function getHumanChoice() {
     if (humanSelection === "rock") {
         return "rock";
