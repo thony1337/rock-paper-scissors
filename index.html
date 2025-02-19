@@ -27,16 +27,22 @@ let computerChoice = getComputerChoice();
 
  function playRound(humanChoice, computerChoice) {   
    if (humanChoice === "rock" && computerChoice === "paper") {
+      computerScore++;
       return "You lose! Paper beats rock";
    } else  if (humanChoice === "paper" && computerChoice === "scissors") {
+      computerScore++;
       return "You lose! Scissors beats paper";
    } else  if (humanChoice === "scissors" && computerChoice === "rock") {
+      computerScore++;
       return "You lose! Rock beats scissors";
    } else  if (humanChoice === "rock" && computerChoice === "scissors") {
+      humanScore++;
       return "You Won! Rock beats scissors";
    } else  if (humanChoice === "scissors" && computerChoice === "paper") {
+      humanScore++;
       return "You Won! Scissors beats paper";
    } else  if (humanChoice === "paper" && computerChoice === "rock") {
+      humanScore++;
       return "You Won! Paper beats rock";
    } else  if (humanChoice === "scissors" && computerChoice === "scissors") {
       return "Oh, that's a tie";
