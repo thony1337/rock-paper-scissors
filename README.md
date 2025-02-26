@@ -1,4 +1,6 @@
-## My first time using javascript, I made a rock, paper and scissors game that's played on the console.
+## Rock, Paper and Scissors game.
+I made a rock, paper and scissors game that's played on the console
+
 
 1- **Get computer choice**
  * Uses math random to generate random choice and return rock, paper, scissors.
