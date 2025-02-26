@@ -21,5 +21,5 @@ I made a rock, paper and scissors game that's played on the console
 
 
 ## Tools used
-*JavaScript
+* **JavaScript**
 
